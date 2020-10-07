@@ -12,7 +12,7 @@ const render = require("./lib/htmlRenderer");
 
 const employee = [];
 
-function createEmployee() {
+function createEmployee(){
   inquirer
     .prompt({
 		type: "list",
@@ -109,7 +109,7 @@ function createIntern() {
 			response.school
 		);
 		console.log(intern);
-		employeeArr.push(intern);
+		employee.push(intern);
 		createEmployee();
     });
 }
@@ -146,7 +146,7 @@ function createEngineer() {
 			response.github
 		);
 		console.log(engineer);
-		employeeArr.push(engineer);
+		employee.push(engineer);
 		createEmployee();
     });
 }
